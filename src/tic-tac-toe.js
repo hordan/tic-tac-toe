@@ -19,11 +19,11 @@ class TicTacToe {
             this.pole[rowIndex][columnIndex] = this.symbol;
             if (this.symbol === 'o') {
                 this.symbol = 'x';
-            
+
             }
             if (this.symbol === 'x') {
                 this.symbol = 'o';
-    
+
             }
         }
     }
@@ -36,13 +36,13 @@ class TicTacToe {
     }
 
     getWinner() {
-        for (var i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             if ((this.pole[i][0] === this.pole[i][1]) &&( this.pole[i][1] === this.pole[i][2]) && (this.pole[i][0] !== null)) {
                 return this.pole[i][0];
             }
         }
 
-        for (var i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             if ((this.pole[0][i] === this.pole[1][i] )&&(this.pole[1][i] === this.pole[2][i] )&&( this.pole[0][i] !== null )) {
                 return this.pole[0][i];
             }

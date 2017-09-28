@@ -2,16 +2,15 @@ class TicTacToe {
     constructor() {
         this.pole = [];
         for (var i = 0; i < 3; i++) {
-            pole[i] = [];
+            this.pole[i] = [];
             for (var j = 0; j < 3; j++) {
-                pole[i][j] = null;
+                this.pole[i][j] = null;
             }
         }
         this.symbol = 'x';
     }
 
     getCurrentPlayerSymbol() {
-        console.log(this.symbol);
         return this.symbol;
     }
 
@@ -57,7 +56,7 @@ class TicTacToe {
             return pole[0][2];
         }
         return null;
- 
+
     }
 
     noMoreTurns() {
